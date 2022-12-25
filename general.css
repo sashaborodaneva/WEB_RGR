@@ -1,0 +1,97 @@
+body {  
+    margin: 0;
+    width: 1903px;
+}
+.header{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+}
+  .content{
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 2; 
+    width: 100%;
+}
+.line1{
+    font-size: 150px;
+    color: aqua;
+    font-weight: bolder;
+    -webkit-text-stroke: 0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    bottom: 0px;
+    z-index: 3;
+    line-height: 30px;   
+}
+.line1:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+.line2{
+    font-size: 150px;
+    color: aqua;
+    font-weight: bolder;
+    -webkit-text-stroke: 0;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    position: absolute;
+    top: 600px;
+    left: 300px;
+    bottom: 0px;
+    z-index: 3;
+    line-height: 30px;
+}
+.line2:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+  }
+.buttonStart {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+  }
+  .btn{
+      font-size: 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+      border: 0;
+      height: 80px;
+      width: 20%;
+      color: white;
+      padding: 10px 24px;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      float: left;
+    }
+  .btn:hover{
+      background-color: rgba(255, 255, 255, 0);
+      color: rgb(255, 255, 255);
+  }
+  .menu {
+    display: none;
+    position: absolute;
+    top: 80px;
+    width: 20%;
+    z-index: 1;
+  }
+  .menu input {
+    font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: rgb(209, 209, 209);
+    border: 0;
+    height: 60px;
+    width: 100%;
+    display: block;
+  }
+  .menu input:hover {
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border: 0;
+  }
+  .show {
+    display:block;
+  } 
