@@ -1,0 +1,566 @@
+body {  
+    margin: 0;
+    width: 1903px;
+  }
+  .shrek{
+      position: relative;
+      height: 900px;
+      background-color: rgb(156, 60, 84);
+      color: aliceblue;
+  }
+  .img1{
+    position: absolute;
+    top: 200px;
+    left: 850px;
+    height: 700px;
+  }
+  .name1{
+    font-size: 100px;
+    margin-left: 100px;
+    margin-right: 850px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name1:hover{
+    transform: scale(1.2);
+  }
+  .text1{
+      font-size: 30px;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      text-align: center;
+      margin-right: 880px;
+      margin-top: 70px;
+      margin-left: 80px;
+      line-height: 50px;
+  }
+  .fiona{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .img2{
+    position: absolute;
+    top: 150px;
+    right: 1100px;
+    height: 750px;
+  }
+  .name2{
+    font-size: 100px;
+    margin-left: 900px;
+    margin-right: 200px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name2:hover{
+    transform: scale(1.2);
+  }
+  .text2{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 80px;
+    margin-top: 70px;
+    margin-left: 800px;
+    line-height: 40px;
+  }
+  .img3{  
+    position: absolute;
+    top: 150px;
+    left: 700px;
+    height: 750px;
+  }
+  .donkey{
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .text3{
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 880px;
+    margin-top: 70px;
+    margin-left: 80px;
+    line-height: 50px;
+  }
+  .name3{
+    font-size: 100px;
+    margin-left: 100px;
+    margin-right: 900px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name3:hover{
+    transform: scale(1.2);
+  }
+  .cat{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .name4{
+    font-size: 100px;
+    margin-left: 870px;
+    margin-right: 150px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name4:hover{
+    transform: scale(1.1);
+  }
+  .img4{
+    position: absolute;
+    top: 140px;
+    left: 60px;
+    height: 750px;
+  }
+  .lion{
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .name5{
+    font-size: 100px;
+    margin-left: 80px;
+    margin-right: 900px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name5:hover{
+    transform: scale(1.2);
+  }
+  .img5{  
+    position: absolute;
+    top: 60px;
+    left: 1100px;
+    height: 900px;
+  }
+  .marti{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .name6{
+    font-size: 100px;
+    margin-left: 850px;
+    margin-right: 200px;
+    margin-top: 0;
+    padding-top: 80px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name6:hover{
+    transform: scale(1.2);
+  }
+  .img6{
+    position: absolute;
+    top: 100px;
+    left: 120px;
+    height: 800px;
+  }
+  .text6{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 110px;
+    margin-top: 110px;
+    margin-left: 750px;
+    line-height: 40px;
+  }
+  .gloria{
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .img7{  
+    position: absolute;
+    top: 65px;
+    left: 1100px;
+    height: 800px;
+  }
+  .text7{
+    font-size: 26px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 880px;
+    margin-top: 70px;
+    margin-left: 80px;
+    line-height: 50px;
+  }
+  .name7{
+    font-size: 100px;
+    margin-left: 200px;
+    margin-right: 1000px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name7:hover{
+    transform: scale(1.2);
+  }
+  .melman{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .name8{
+    font-size: 100px;
+    margin-left: 750px;
+    margin-right: 100px;
+    margin-top: 0;
+    padding-top: 80px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name8:hover{
+    transform: scale(1.2);
+  }
+  .img8{
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    height: 850px;
+  }
+  .manny{
+    transform-style: preserve-3d;
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .name9{
+    font-size: 100px;
+    margin-left: 200px;
+    margin-right: 1000px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  } 
+  .name9:hover{
+    transform: scale(1.2);
+  }
+  .img9{  
+    position: absolute;
+    top: 130px;
+    left: 930px;
+    height: 730px;
+  }
+  .text9{
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 880px;
+    margin-top: 70px;
+    margin-left: 80px;
+    line-height: 40px;
+  }
+  .sid{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .img10{
+    position: absolute;
+    top: 170px;
+    left: 150px;
+    height: 700px;
+  }
+  .name10{
+    font-size: 100px;
+    margin-left: 900px;
+    margin-right: 300px;
+    margin-top: 0;
+    padding-top: 80px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name10:hover{
+    transform: scale(1.2);
+  }
+  .diego{
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .img11{  
+    position: absolute;
+    top: 200px;
+    left: 1100px;
+    height: 650px;
+  }
+  .scrat{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .name12{
+    font-size: 100px;
+    margin-left: 950px;
+    margin-right: 200px;
+    margin-top: 0;
+    padding-top: 80px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name12:hover{
+    transform: scale(1.2);
+  }
+  .img12{
+    position: absolute;
+    top: 350px;
+    left: 50px;
+    height: 500px;
+  }
+  .homer{
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .img13{  
+    position: absolute;
+    top: 100px;
+    left: 1300px;
+    height: 800px;
+  }
+  .marge{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .name14{
+    font-size: 100px;
+    margin-left: 900px;
+    margin-right: 350px;
+    margin-top: 0;
+    padding-top: 80px;
+    transition: 0.5s;
+    text-align: center;
+    }
+  .name14:hover{
+    transform: scale(1.2);
+  }
+  .img14{
+    position: absolute;
+    top: 30px;
+    left: 100px;
+    height: 900px;
+  }
+  .text14{
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 120px;
+    margin-top: 70px;
+    margin-left: 700px;
+    line-height: 40px;
+  }
+  .bart{
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .name15{
+    font-size: 100px;
+    margin-left: 150px;
+    margin-right: 800px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+    }
+  .name15:hover{
+    transform: scale(1.2);
+  }
+  .img15{  
+    position: absolute;
+    top: 280px;
+    left: 1250px;
+    height: 600px;
+  }
+  .text15{
+    font-size: 28px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 800px;
+    margin-top: 100px;
+    margin-left: 100px;
+    line-height: 40px;
+  }
+  .lisa{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .name16{
+    font-size: 100px;
+    margin-left: 1150px;
+    margin-right: 500px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+    }
+  .name16:hover{
+    transform: scale(1.2);
+  }
+  .img16{
+    position: absolute;
+    top: 250px;
+    left: 150px;
+    height: 600px;
+  }
+  .maggi{
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .name17{
+    font-size: 100px;
+    margin-left: 250px;
+    margin-right: 1000px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+    }
+  .name17:hover{
+    transform: scale(1.2);
+  }
+  .img17{  
+    position: absolute;
+    top: 370px;
+    left: 1400px;
+    height: 500px;
+  }
+  .text17{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 800px;
+    margin-top: 150px;
+    margin-left: 100px;
+    line-height: 40px;
+  }
+  .james{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+    position: relative;
+    top: 0;
+    right: 0;
+    z-index: 2;
+  }
+  .name18{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    font-size: 80px;
+    width: 900px;
+    margin-left: 110px;
+    margin-top: 50px;
+    padding-top: 10px;
+    transition: 0.5s;
+    text-align: center;
+    z-index: 1;
+  }
+  .name18:hover{
+    transform: scale(1.1);
+  }
+  .img18{  
+    position: absolute;
+    top: 150px;
+    left: 950px;
+    height: 780px;
+    transition: 1s;
+    text-align: center;
+  }
+  .img18:hover{
+    transform: scale(1.2);
+  }
+  .text18{
+    color: white;
+    position: absolute;
+    font-size: 22px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    margin-right: 880px;
+    margin-top: 250px;
+    margin-left: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
+    line-height: 40px;
+  }
+  .mike{
+    position: relative;
+    height: 900px;
+    background-color: rgb(156, 60, 84);
+    color: aliceblue;
+  }
+  .name19{
+    font-size: 80px;
+    margin-left: 700px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name19:hover{
+    transform: scale(1.1);
+  }
+  .img19{  
+    position: absolute;
+    top: 250px;
+    left: 80px;
+    height: 600px;
+  }
+  .boo{
+    position: relative;
+    height: 900px;
+    background-color: rgb(209, 66, 102);
+    color: aliceblue;
+  }
+  .name20{
+    font-size: 100px;
+    margin-left: 100px;
+    margin-right: 800px;
+    margin-top: 0;
+    padding-top: 60px;
+    transition: 0.5s;
+    text-align: center;
+  }
+  .name20:hover{
+    transform: scale(1.2);
+  }
+  .img20{  
+    position: absolute;
+    top: 300px;
+    left: 1400px;
+    height: 600px;
+  }
