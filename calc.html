@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Калькулятор</title>
+    <style>
+        body {
+            margin: 0;
+            height: 968px;
+            }
+            .container {
+            width: 600px;
+            height: 500px;
+
+            position: absolute;
+            left: 48%;
+            top: 20%;
+            transform: translate(-50%, 0%);
+            margin: 25p00px
+            
+            align-content: center;
+            display: flex;
+            flex-wrap: wrap;
+
+            border: 3px solid black;
+            }
+            .inputIn {
+            box-sizing: border-box;
+            width: 600px;
+            height: 100px;
+
+            line-height: 80px;
+            vertical-align: middle;
+            font-size: 50px;
+            text-align: right;
+            padding: 10px;
+
+            overflow: auto;
+            overflow-y: hidden;
+
+            border: 3px solid black;
+            background-color: rgb(241, 238, 238);
+            }
+            button {
+            width: 100px;
+            height: 100px;
+            
+            border: 2px solid black;
+
+            font-size: 36px;
+            cursor: pointer;
+            }
+
+            .equal {
+            width: 600px;
+            background-color: rgb(255, 148, 98);
+            }
+            .equal:hover {
+            background-color: #6771fd; /* Green */
+            color: white;
+            }
+            .number {
+            background-color: rgb(243, 97, 97);
+            }
+            .number:hover {
+            background-color: #4CAF50; /* Green */
+            color: white;
+            }
+            .sign {
+            background-color: rgb(255, 189, 102);
+            }
+            .sign:hover {
+            background-color: #f762ea; /* Green */
+            color: white;
+            }
+    </style>
+    
+</head>
+<body id="eff">
+    <div class="container">
+        <div class="inputIn"></div>
+            <button class="clean sign">C</button>
+            <button class="cleanOne sign">del</button>
+            <button class="plusOrMinus sign">+/-</button>
+            <button class="plurar sign">*</button>
+            <button class="division sign">/</button>
+            <button class="minus sign">-</button>
+            <button class="zero number">0</button>
+            <button class="one number">1</button>
+            <button class="two number">2</button>
+            <button class="three number">3</button>
+            <button class="four number">4</button>
+            <button class="plus sign">+</button>
+            <button class="five number">5</button>
+            <button class="six number">6</button>
+            <button class="seven number">7</button>
+            <button class="eight number">8</button>
+            <button class="nine number">9</button>
+            <button class="point sign">.</button>
+            <button class="equal">=</button>
+    </div>
+</body>
+<script src="three.min.js"></script>
+<script src="vanta.birds.min.js"></script>
+<script language="JavaScript">
+VANTA.BIRDS({
+  el: "#eff",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 200.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  backgroundColor: 0x2e5f9d,
+  color2: 0xc300ff,
+  backgroundAlpha: 0.49
+})
+// number
+let arrNumberCalc =  document.querySelectorAll(".number");
+
+// sing & input
+let inputIn = document.querySelector(".inputIn");
+let clean = document.querySelector(".clean");
+let cleanOne = document.querySelector(".cleanOne");
+let plusOrMinus = document.querySelector(".plusOrMinus");
+let plurar = document.querySelector(".plurar");
+let division = document.querySelector(".division");
+let minus = document.querySelector(".minus");
+let plus = document.querySelector(".plus");
+let point = document.querySelector(".point");
+let equal = document.querySelector(".equal");
+let sum = [];
+
+clean.onclick = function() {
+   inputIn.innerHTML = "";
+   sum.length = 0;
+}
+cleanOne.onclick = function() {
+    let inInnerHtml = inputIn.innerHTML;
+    inputIn.innerHTML = inInnerHtml.substring(0, inInnerHtml.length-1);
+}
+plusOrMinus.onclick = function() {
+    let inInnerHtml = inputIn.innerHTML;
+    let oneSimfol = inInnerHtml[0];
+    if (oneSimfol != "-") {
+        inputIn.innerHTML = "-" + inInnerHtml;
+    } else if (oneSimfol == "-"){
+        inputIn.innerHTML = inInnerHtml.substring(1);
+    }
+}
+// вывод чисел 
+for (let i = 0; i < 10; i++) {
+    arrNumberCalc[i].onclick = function() {
+        inputIn.innerHTML = inputIn.innerHTML + i;
+     }
+}
+// point
+point.onclick = function() {
+    let searchPoint = inputIn.innerHTML.indexOf(".");
+    if (searchPoint == -1 && inputIn.innerHTML.length != 0) {
+        inputIn.innerHTML = inputIn.innerHTML + ".";
+    }
+}
+// calc
+ plus.onclick = function() {
+    sum.push(parseFloat(inputIn.innerHTML));
+    sum.push("+");
+    inputIn.innerHTML = "";
+ }
+ minus.onclick = function() {
+    sum.push(parseFloat(inputIn.innerHTML));
+    sum.push("-");
+    inputIn.innerHTML = "";
+ }
+ plurar.onclick = function() {
+    sum.push(parseFloat(inputIn.innerHTML));
+    sum.push("*");
+    inputIn.innerHTML = "";
+ }
+ division.onclick = function() {
+    sum.push(parseFloat(inputIn.innerHTML));
+    sum.push("/");inputIn.innerHTML = "";
+ }
+ equal.onclick = function() {
+    sum.push(parseFloat(inputIn.innerHTML));
+      let num = 0;
+   while(sum.length > 1) {
+        switch(sum[1]) {
+            case "+": num = sum[0] + sum[2]; sum.splice(0, 3, num); break;
+            case "-": num = sum[0] - sum[2]; sum.splice(0, 3, num); break;
+            case "/": num = sum[0] / sum[2]; sum.splice(0, 3, num); break;
+            case "*": num = sum[0] * sum[2]; sum.splice(0, 3, num); break;
+        }
+    }
+    inputIn.innerHTML = sum[0];
+    sum = [];
+ }
+ 
+
+</script>
+</html>
