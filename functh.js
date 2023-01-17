@@ -45,9 +45,59 @@ function calc(){
  function myFunction(elmnt, clr) {
   elmnt.style.color = clr;
 }
-
-
-function setclick(color){
-    document.body.style.background = color
+function setclick1(){
+    let r = Math.round(Math.random()*255); 
+    let g = Math.round(Math.random()*255); 
+    let b = Math.round(Math.random()*255); 
+    let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+    document.body.style.background = color;
 }
+function setclick2(){
+    let r = Math.round(Math.random()*255); 
+    let g = Math.round(Math.random()*255); 
+    let b = Math.round(Math.random()*255); 
+    let color = 'rgb(' + r + ',' + g + ',' + b + ')';
+    document.getElementById('click2').style.backgroundColor = color;
+}
+function setclick3(){
+    alert('Добрый день! Это всплывающее окно, нажмите "ОК" и продолжайте смотреть).' + ' Сегодня: ' + Date())
+}
+function setclick4(){
+    let img = document.getElementById('picture');
+    img.style.visibility = 'visible';
+}
+function setclick5(){
+    let img = document.getElementById('picture');
+    if (img.style.visibility = 'visible') {
+        img.animate ([
+            {transform: 'translate3D(0, 0, 0)'}, 
+            {transform: 'translate3D(0, -200px, 0)'},
+            {transform: 'translate3D(-200px, 0, 0)'}, 
+            {transform: 'translate3D(200px, 0, 0)'},
+            {transform: 'rotatex: 0deg'}, 
+            {transform: 'rotatex: 360deg'}
+        ], {
+            duration: 2500,
+            iterations: Infinity
+        })
+    }
+}
+function setclick6(){
+    let img = document.getElementById('picture');
+    img.style.visibility = 'hidden';
+}
+
+
+function setclick0(){
+    function val(x,y){
+        return (x + (Math.random() * (y-x)));
+    }
+    let object = " ";
+    for (let i = 0; i < 60; i++){
+        let a = val(2, 30);
+        object += '<div class="object" style="height: ' + a + 'px; width: ' + a + 'px; background-color: rgba('+val(0, 300)+','+val(0, 300)+','+ val(0, 300)+'); animation-duration: '+val(10, 30)+'s; top: '+val(0 ,100)+'%; left: '+val(0 ,100)+'%;"></div>'
+    }
+    document.body.innerHTML = object;
+}
+
 
