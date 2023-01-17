@@ -1,0 +1,70 @@
+
+  *{
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0;
+    background-color: rgb(200, 214, 202);
+    overflow: hidden;
+  }
+
+  .skill{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 30px 70px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    font-size: 20px;
+  }
+  .skill2{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 30px 70px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 6px;
+    font-size: 20px;
+  }
+  .skill:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .skill2:hover{
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  .base{
+    margin-top: 350px;
+    margin-left: 170px;
+    width: 90%;
+  }
+  .anim{
+    width: 300px;
+    margin-left: 1400px;
+    margin-top: 100px;
+    visibility: hidden; 
+  }
+
+  .object{
+    border-radius: 20px;
+    animation-name: anim;
+    position: relative;
+  }
+  @keyframes anim {
+    from {
+        transform: rotate(0deg) translateX(100px);
+    }
+    to{
+        transform: rotate(360deg) translateX(100px);
+    }
+  }
+
